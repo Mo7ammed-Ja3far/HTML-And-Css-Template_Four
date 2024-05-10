@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/framework.css" />
     <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/framework.css" />
     <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,56 +17,141 @@
   </head>
   <body>
     <div class="page d-flex">
-      <div class="slidebar">
-        <h3>Jafar</h3>
+      <div class="sidebar bg-white p-relative p-20">
+        <h3 class="p-relative mt-0 txt-c">Jafar</h3>
         <ul>
           <li>
-            <a class="active" href="index.html">
+            <a
+              class="active p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="index.html"
+            >
               <i class="fa-regular fa-chart-bar fa-fw"></i>
-              <span>Dashboard</span>
+              <span class="ml-5 hide-mobile">Dashboard</span>
             </a>
           </li>
           <li>
-            <a class="" href="Settings.html">
-              <i class="fa-solid fa-gear"></i>
-              <span>Settings</span>
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Settings.html"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="ml-5 hide-mobile">Settings</span>
             </a>
           </li>
           <li>
-            <a class="" href="Profile.html">
-              <i class="fa-solid fa-user"></i>
-              <span>Profile</span>
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Profile.html"
+            >
+              <i class="fa-solid fa-user fa-fw"></i>
+              <span class="ml-5 hide-mobile">Profile</span>
             </a>
           </li>
           <li>
-            <a class="" href="Projects.html">
-              <i class="fa-solid fa-diagram-project"></i> <span>Projects</span>
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Projects.html"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="ml-5 hide-mobile">Projects</span>
             </a>
           </li>
           <li>
-            <a class="" href="Courses.html">
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Courses.html"
+            >
               <i class="fa-solid fa-graduation-cap fa-fw"></i>
-              <span>Courses</span>
+              <span class="ml-5 hide-mobile">Courses</span>
             </a>
           </li>
           <li>
-            <a class="" href="Friends.html">
-              <i class="fa-solid fa-user-group"></i> <span>Friends</span>
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Friends.html"
+            >
+              <i class="fa-solid fa-user-group fa-fw"></i>
+              <span class="ml-5 hide-mobile">Friends</span>
             </a>
           </li>
           <li>
-            <a class="" href="Files.html">
-              <i class="fa-solid fa-file"></i> <span>Files</span>
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Files.html"
+            >
+              <i class="fa-solid fa-file fa-fw"></i>
+              <span class="ml-5 hide-mobile">Files</span>
             </a>
           </li>
           <li>
-            <a class="" href="Plans.html">
-              <i class="fa-regular fa-credit-card fa-fw"></i> <span>Plans</span>
+            <a
+              class="p-10 d-flex align-center mb-5 fs-14 c-black rad-6"
+              href="Plans.html"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="ml-5 hide-mobile">Plans</span>
             </a>
           </li>
         </ul>
       </div>
-      <div class="content">content</div>
+      <div class="content w-full p-relative">
+        <div class="head between-flex p-15 bg-white p-relative">
+          <input
+            type="text"
+            placeholder="Type A Keyword"
+            class="p-10 rad-6 p-relative"
+          />
+          <div class="notification center-flex">
+            <i class="fa-regular fa-bell fa-lg p-relative"></i>
+            <img
+              class="rad-half ml-15"
+              src="media/photo_2024-02-03_13-46-25.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="p-relative m-20">Dashboard</h1>
+        <div class="wrapper m-20 d-grid gap-20">
+          <div class="welcome bg-white rad-10">
+            <div class="info p-20 between-flex rad-10 bg-eee">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <span class="c-grey mt-5 d-block">Jafar</span>
+              </div>
+              <img src="media/welcome.png" class="hide-mobile" alt="" />
+            </div>
+            <img
+              src="media/photo_2024-02-03_13-46-25.jpg"
+              class="avatar txt-c-mobile"
+              alt=""
+            />
+            <div class="body p-20 m-20 txt-c center-flex block-mobile bg-white">
+              <div>
+                Mohamed Jafar <span class="c-grey d-block">Developer</span>
+              </div>
+              <div>80<span class="c-grey d-block">Projects</span></div>
+              <div>$8500<span class="c-grey d-block">Earned</span></div>
+            </div>
+            <a
+              href=""
+              class="visit d-block fs-14 bg-blue c-white w-fit btn-shape"
+              >Profile</a
+            >
+          </div>
+          <div class="quick-draft bg-white p-20 rad-10">
+            <h2 class="m-0">Quick Draft</h2>
+            <span class="c-grey mt-20 d-block"
+              >Write A Draft For your ideas</span
+            >
+            <input type="text" placeholder="Title" class="d-block mt-20" />
+            <textarea
+              placeholder="Your Thought"
+              class="d-block mt-20"
+            ></textarea>
+            <a href="" class="btn-shape bg-blue c-white m-20 visit">Send</a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
