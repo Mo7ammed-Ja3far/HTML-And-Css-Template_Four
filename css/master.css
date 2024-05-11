@@ -93,6 +93,9 @@ a {
 
 /* End sidebar  */
 /* start content */
+.content {
+  overflow: hidden;
+}
 .content .head::before {
   font-family: "Font Awesome 5 Free";
   content: "\f002";
@@ -348,6 +351,31 @@ a {
   border-bottom: 1px #ccc solid;
 }
 /* End Wrapper */
+/* Start table */
+.responsive-table {
+  overflow-x: auto;
+}
+table {
+  border-spacing: 0;
+  min-width: 1000px;
+}
+table thead {
+  background-color: #eeeeee;
+}
+table thead th,
+table td {
+  padding: 20px;
+}
+table th,
+table td {
+  transition: 0.3;
+  text-align: unset;
+}
+table tr:hover td {
+  background-color: #eee;
+}
+
+/* End table */
 @keyframes flash {
   0% {
     background-color: var(--blue-color);
