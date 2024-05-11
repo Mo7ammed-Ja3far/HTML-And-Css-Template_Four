@@ -6,7 +6,12 @@
   --red-color: #f44336;
   --grey-color: #888;
 }
-
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
 * {
   box-sizing: border-box;
 }
@@ -154,13 +159,13 @@ a {
 .content .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
-.welcome .info {
+.wrapper .welcome .info {
   align-items: flex-start;
 }
-.welcome .info span {
+.wrapper .welcome .info span {
   margin-bottom: 16px;
 }
-.welcome .info img {
+.wrapper .welcome .info img {
   width: 200px;
 }
 @media (max-width: 767px) {
@@ -171,7 +176,7 @@ a {
     gap: 10px;
   }
 }
-.welcome img.avatar {
+.wrapper .welcome img.avatar {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -185,7 +190,7 @@ a {
   }
 }
 
-.welcome .body {
+.wrapper .welcome .body {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
@@ -195,7 +200,159 @@ a {
 .visit {
   margin: 20px 20px 20px auto;
 }
-.welcome .body > div {
+.wrapper .welcome .body > div {
   margin-bottom: 20px;
 }
+
+.wrapper .quick-draft input,
+.wrapper .quick-draft textarea {
+  border-color: #ccc;
+  outline: none;
+  resize: none;
+}
+
+.wrapper .quick-draft a {
+  margin-left: auto;
+}
+.wrapper .yearly-targets .info {
+  flex: 1;
+}
+.wrapper .yearly-targets .icon {
+  width: 64px;
+  height: 64px;
+}
+.wrapper .yearly-targets .progress {
+  height: 2px;
+  background-color: rgb(0 117 255 / 20%);
+}
+.wrapper .yearly-targets .progress div {
+  height: 2px;
+}
+.wrapper .yearly-targets .progress div span {
+  position: absolute;
+  right: -20px;
+  bottom: 15px;
+}
+.wrapper .yearly-targets .progress div span span {
+  content: "";
+  display: block;
+  border-color: transparent;
+  border-width: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: -18px;
+  border-style: solid;
+  border-top-color: rgb(0 117 255);
+}
+.wrapper .tickets-statistics .boxes .box {
+  width: calc(50% - 10px);
+  border-radius: 6px;
+  border: #ccc 1px solid;
+}
+.wrapper .latest-news .box:not(:first-of-type) {
+  border-top: #ccc 1px solid;
+}
+.wrapper .latest-news .box img {
+  width: 100px;
+}
+.wrapper .latest-news .box .info {
+  flex: 1;
+}
+.wrapper .latest-tasks .box .info {
+  flex: 1;
+}
+.wrapper .latest-tasks .box {
+  cursor: pointer;
+}
+.wrapper .latest-tasks .box:not(:last-of-type) {
+  border-bottom: #ccc 1px solid;
+  margin-bottom: 10px;
+}
+.wrapper .latest-tasks .box:nth-of-type(4) {
+  text-decoration: black line-through;
+  color: #ccc;
+}
+.wrapper .last-uploads .info {
+  flex: 1;
+}
+.wrapper .last-uploads img {
+  height: 40px;
+  width: 40px;
+}
+
+.wrapper .last-uploads .box:not(:last-of-type) {
+  border-bottom: #ccc 1px solid;
+  margin-bottom: 10px;
+}
+.wrapper .last-project .project::before {
+  width: 3px;
+  height: 100%;
+  content: "";
+  background-color: var(--blue-color);
+  position: absolute;
+  left: 12.5px;
+}
+.wrapper .last-project .project ul li::before {
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: -5px;
+  border: white 5px solid;
+  outline: var(--blue-color) 2px solid;
+}
+.wrapper .last-project .project ul li {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.wrapper .last-project .project ul li:nth-child(4)::before {
+  animation: flash alternate 0.8s infinite;
+}
+.wrapper .last-project .project ul li:nth-child(4)::before,
+.wrapper .last-project .project ul li:nth-child(5)::before {
+  background-color: white;
+}
+.wrapper .reminders ul li {
+  padding: 10px;
+  margin-left: 30px;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+.wrapper .reminders ul .circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  left: -35px;
+  top: 18px;
+  display: inline-block;
+}
+.wrapper .reminders ul li.blue {
+  border-left: 2px solid var(--blue-color);
+}
+.wrapper .reminders ul li.green {
+  border-left: 2px solid var(--green-color);
+}
+.wrapper .reminders ul li.red {
+  border-left: 2px solid var(--red-color);
+}
+.wrapper .reminders ul li.orange {
+  border-left: 2px solid var(--orange-color);
+}
+.wrapper .last-post .info {
+  padding-bottom: 10px;
+  border-bottom: 1px #ccc solid;
+}
 /* End Wrapper */
+@keyframes flash {
+  0% {
+    background-color: var(--blue-color);
+  }
+  100% {
+    background-color: white;
+  }
+}
