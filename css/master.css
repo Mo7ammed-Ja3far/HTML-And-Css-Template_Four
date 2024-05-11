@@ -78,8 +78,9 @@ a {
   background-color: #f6f6f6;
 }
 @media (max-width: 767px) {
-  .sidebar {
+  .page .sidebar {
     width: fit-content;
+    padding: 10px;
   }
   .sidebar h3 {
     margin: 0 0 10px;
