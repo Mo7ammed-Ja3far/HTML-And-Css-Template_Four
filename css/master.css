@@ -453,7 +453,78 @@ input[disabled] {
   height: 40px;
   border-radius: 0px 6px 6px 0px;
 }
+@media (max-width: 767px) {
+  .backup {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+input[name="backup"] {
+  display: none;
+}
+input[name="backup"] + label {
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[name="backup"]:checked + label {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
 /* End settings */
+/* Start Profile */
+.profile-page .info {
+  border-left: 1px solid #ccc;
+}
+.profile-page .photo img {
+  width: 120px;
+  height: 120px;
+}
+.profile-page .profile .info div div:not(:first-of-type) {
+  min-width: 250px;
+  padding-top: 10px;
+}
+.profile-page .profile .info .box:not(:first-of-type) {
+  border-top: 1px solid #ccc;
+}
+.toggle-checkbox {
+  appearance: none;
+  display: none;
+}
+.profile-page .toggle-switch {
+  width: 78px;
+  height: 20px;
+}
+.profile-page .toggle-switch::before {
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+}
+.profile-page .toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.profile-page .toggle-checkbox:checked + .toggle-switch::before {
+  top: 4px;
+  left: 62px;
+}
+.profile-page .skills:not(:first-of-type) {
+  border-top: #ccc solid 1px;
+}
+.my-skills {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.last-activities {
+  margin-left: 10px;
+  flex-grow: 2;
+}
+.last-activities .activities img {
+  width: 64px;
+  height: 64px;
+}
+.last-activities .activities:not(:first-of-type) {
+  border-top: #ccc solid 1px;
+}
+/* End Profile */
 @keyframes flash {
   0% {
     background-color: var(--blue-color);
