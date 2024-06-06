@@ -249,7 +249,9 @@ textarea {
 .border-eee {
   border: 1px solid #eee;
 }
-
+.border-t {
+  border-top: 1px solid #ccc;
+}
 /* End Border */
 /* Start Width + Height */
 .w-full {
@@ -283,6 +285,7 @@ textarea {
   justify-content: space-between;
 }
 .btn-shape {
+  cursor: pointer;
   padding: 4px 10px;
   border-radius: 6px;
 }

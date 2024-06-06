@@ -525,6 +525,173 @@ input[name="backup"]:checked + label {
   border-top: #ccc solid 1px;
 }
 /* End Profile */
+/* start projects */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .projects-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    gap: 10px !important;
+  }
+}
+.projects-page .team {
+  min-height: 80px;
+}
+.projects-page .team img {
+  border-radius: 50%;
+  width: 40px;
+  bottom: 20px;
+  position: absolute;
+}
+.projects-page .team img:nth-of-type(1) {
+  z-index: 6;
+}
+.projects-page .team img:nth-of-type(2) {
+  z-index: 5;
+  left: 25px;
+}
+.projects-page .team img:nth-of-type(3) {
+  z-index: 4;
+  left: 50px;
+}
+.projects-page .team img:nth-of-type(4) {
+  z-index: 3;
+  left: 75px;
+}
+.projects-page .team img:nth-of-type(5) {
+  z-index: 2;
+  left: 100px;
+}
+.projects-page .team img:nth-of-type(6) {
+  z-index: 1;
+  left: 125px;
+}
+.projects-page .team img:hover {
+  z-index: 10;
+}
+.projects-page .box {
+  justify-content: flex-end;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .projects-page .box {
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .projects-page .box span {
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .projects-page .progress {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* End projects */
+/* start course */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .courses-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    gap: 10px !important;
+  }
+}
+.courses-page .cover {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.courses-page .img {
+  position: absolute;
+  width: 64px;
+  top: 20px;
+  left: 20px;
+}
+.courses-page .click {
+  position: absolute;
+  top: -15px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.courses-page .info {
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+/* End course */
+/* Start Friends */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    gap: 10px !important;
+  }
+}
+.contact {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  gap: 5px;
+  width: fit-content;
+}
+.contact i {
+  color: black;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.friends-page .more {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.friends-page .vip {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #f59e0b;
+  opacity: 0.4;
+}
+
+/* End Friends */
+/* Start Files */
+.files-page {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files-page img {
+  width: 64px;
+  height: 64px;
+}
+.files-page .contact i {
+  background-color: white;
+}
+
+.content .stats {
+  min-width: 260px;
+  height: fit-content;
+}
+/* End Files */
 @keyframes flash {
   0% {
     background-color: var(--blue-color);
