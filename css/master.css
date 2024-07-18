@@ -128,7 +128,7 @@ a {
   width: 32px;
 }
 
-.content .notification i::after {
+.content .notification i.active::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -214,6 +214,8 @@ a {
   border-color: #ccc;
   outline: none;
   resize: none;
+  border: none;
+  padding: 15px;
 }
 
 .wrapper .quick-draft a {
@@ -274,7 +276,7 @@ a {
   margin-bottom: 10px;
 }
 .wrapper .latest-tasks .box:nth-of-type(4) {
-  text-decoration: black line-through;
+  text-decoration: black;
   color: #ccc;
 }
 .wrapper .last-uploads .info {
@@ -630,6 +632,9 @@ input[name="backup"]:checked + label {
 .friends-page {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+.friends-page img {
+  cursor: pointer;
+}
 @media (max-width: 767px) {
   .friends-page {
     grid-template-columns: minmax(100px, 1fr);
@@ -655,6 +660,15 @@ input[name="backup"]:checked + label {
   align-items: center;
   justify-content: center;
   height: 30px;
+}
+.contact i:first-of-type:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+.contact i:last-of-type:hover {
+  background-color: var(--green-color);
+  color: white;
+  font-weight: bold;
 }
 
 .friends-page .more {

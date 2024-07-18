@@ -39,6 +39,12 @@ textarea {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .colo-mobile {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
 /* End Box */
 /* Start Padding + Margin */
 .p-5 {

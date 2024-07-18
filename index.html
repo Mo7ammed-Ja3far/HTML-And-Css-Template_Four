@@ -102,8 +102,8 @@
             placeholder="Type A Keyword"
             class="p-10 rad-6 p-relative"
           />
-          <div class="notification center-flex">
-            <i class="fa-regular fa-bell fa-lg p-relative"></i>
+          <div class="notification p-relative center-flex">
+            <i id="bell" class="fa-regular active fa-bell fa-lg p-relative"></i>
             <img
               class="rad-half ml-15"
               src="media/photo_2024-02-03_13-46-25.jpg"
@@ -186,7 +186,7 @@
                 <div class="progress bg-orange2 p-relative mt-10 w-full">
                   <div class="bg-orange p-relative" style="width: 55%">
                     <span class="p-5 bg-orange c-white rad-6 fs-14"
-                      >55% <span></span
+                      >55% <span style="border-top-color: orange"></span
                     ></span>
                   </div>
                 </div>
@@ -202,7 +202,8 @@
                 <div class="progress bg-green p-relative mt-10 w-full">
                   <div class="bg-green p-relative" style="width: 75%">
                     <span class="p-5 bg-green c-white rad-6 fs-14"
-                      >75% <span></span
+                      >75%
+                      <span style="border-top-color: var(--green-color)"></span
                     ></span>
                   </div>
                 </div>
@@ -239,15 +240,15 @@
               </div>
             </div>
           </div>
-          <div class="latest-news p-20 bg-white">
+          <div class="latest-news p-20 bg-white m">
             <h2 class="m-0 mb-20">Latest News</h2>
-            <div class="box center-flex pt-20 pb-20">
+            <div class="box colo-mobile txt-c-mobile center-flex pt-20 pb-20">
               <img
                 class="mr-10 rad-10"
                 src="media/latest news/news-01.png"
                 alt=""
               />
-              <div class="info">
+              <div class="info p-10">
                 <span class="fw-bold">Created SASS Section </span>
                 <span class="c-grey d-block fs-14"
                   >New SASS Examples & Tutorials</span
@@ -257,13 +258,13 @@
                 >3 Days Ago
               </span>
             </div>
-            <div class="box center-flex pt-20 pb-20">
+            <div class="box colo-mobile txt-c-mobile center-flex pt-20 pb-20">
               <img
                 class="mr-10 rad-10"
                 src="media/latest news/news-02.png"
                 alt=""
               />
-              <div class="info">
+              <div class="info p-10">
                 <span class="fw-bold">Created SASS Section </span>
                 <span class="c-grey d-block fs-14"
                   >New SASS Examples & Tutorials</span
@@ -273,13 +274,13 @@
                 >5 Days Ago
               </span>
             </div>
-            <div class="box center-flex pt-20 pb-20">
+            <div class="box colo-mobile txt-c-mobile center-flex pt-20 pb-20">
               <img
                 class="mr-10 rad-10"
                 src="media/latest news/news-03.png"
                 alt=""
               />
-              <div class="info">
+              <div class="info p-10">
                 <span class="fw-bold">Team Increased </span>
                 <span class="c-grey d-block fs-14"
                   >3 Developers Joined The Team
@@ -289,13 +290,13 @@
                 >7 Days Ago
               </span>
             </div>
-            <div class="box center-flex pt-20 pb-20">
+            <div class="box colo-mobile txt-c-mobile center-flex pt-20 pb-20">
               <img
                 class="mr-10 rad-10"
                 src="media/latest news/news-04.png"
                 alt=""
               />
-              <div class="info">
+              <div class="info p-10">
                 <span class="fw-bold">Added Payment Gateway </span>
                 <span class="c-grey d-block fs-14">
                   Many New Payment Gateways Added</span
@@ -309,7 +310,7 @@
           <div class="latest-tasks bg-white p-20">
             <h2 class="m-0 mb-10">Latest Tasks</h2>
             <div class="box pt-10 pb-10 center-flex">
-              <div class="info">
+              <div class="info p-10">
                 <span class="fw-bold d-block"> Record One New Video </span>
                 <span class="c-grey">Record Python Create Exe Project </span>
               </div>
@@ -352,7 +353,7 @@
             </div>
             <div class="between-flex">
               <span class="pt-10 pb-10 mt-10 fs-14">Keyword</span>
-              <span class="c-grey mt-10 btn-shape bg-eee fs-14">180</span>
+              <span class="mt-10 btn-shape bg-eee fs-14">180</span>
             </div>
             <div class="between-flex">
               <span class="pt-10 pb-10 mt-10 fs-14">Keyword</span>
@@ -653,5 +654,6 @@
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
