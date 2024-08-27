@@ -8,7 +8,7 @@ const Courses = () => {
           <div className="p-relative bg-white rad-10">
             <img src="media/Courses/course-01.jpg" className="cover" alt="" />
             <img
-              src="media/projects/team-01.png "
+              src="media/projects/team-01.png"
               className="img rad-half"
               alt=""
             />
@@ -62,7 +62,7 @@ const Courses = () => {
           <div className="p-relative bg-white rad-10">
             <img src="media/Courses/course-01.jpg" className="cover" alt="" />
             <img
-              src="media/projects/team-01.png "
+              src="./media/Courses/course-01.jpg"
               className="img rad-half"
               alt=""
             />
