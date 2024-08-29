@@ -1,7 +1,12 @@
 import Slid from "../comp/Slid";
+import { Helmet } from "react-helmet-async";
 const Settings = () => {
   return (
     <Slid>
+      <Helmet>
+        <title>Settings</title>
+        <meta name="description" content="This is Your Settings" />
+      </Helmet>
       <h1 class="p-relative m-20">Settings</h1>
       <div className="settings-page d-grid gap-20 m-20">
         <div className="bg-white p-20 rad-10">

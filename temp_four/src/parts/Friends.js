@@ -1,7 +1,12 @@
 import Slid from "../comp/Slid";
+import { Helmet } from "react-helmet-async";
 const Friends = () => {
   return (
     <Slid>
+      <Helmet>
+        <title>Friends</title>
+        <meta name="description" content="This is Your Friends" />
+      </Helmet>
       <>
         <h1 className="p-relative m-20">Friends</h1>
         <div className="friends-page d-grid gap-20 m-20">

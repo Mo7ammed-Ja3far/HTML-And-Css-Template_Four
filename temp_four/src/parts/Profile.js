@@ -1,12 +1,17 @@
 import Slid from "../comp/Slid";
+import { Helmet } from "react-helmet-async";
 const Profile = () => {
   return (
     <Slid>
+      <Helmet>
+        <title>Profile</title>
+        <meta name="description" content="This is Your Profile" />
+      </Helmet>
       <>
         <h1 className="p-relative m-20">Profile</h1>
         <div className="profile-page m-20">
           <div className="bg-white rad-10 p-20">
-            <div className="profile between-flex">
+            <div className="profile  block-mobile between-flex">
               <div className="photo txt-c p-20">
                 <img
                   src="media/photo_2024-02-03_13-46-25.jpg "
@@ -110,7 +115,7 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div className="d-flex mt-20">
+          <div className="d-flex block-mobile mt-20">
             <div className="my-skills p-20 bg-white rad-10">
               <h2 className="m-0 mb-10">My Skills</h2>
               <p className="fs-14 c-grey d-block">Complete Skills List</p>

@@ -1,7 +1,12 @@
 import Slid from "../comp/Slid";
+import { Helmet } from "react-helmet-async";
 const Files = () => {
   return (
     <Slid>
+      <Helmet>
+        <title>Files</title>
+        <meta name="description" content="This is Your Files" />
+      </Helmet>
       <>
         <h1 className="p-relative m-20">Files</h1>
         <div className="d-flex m-20">

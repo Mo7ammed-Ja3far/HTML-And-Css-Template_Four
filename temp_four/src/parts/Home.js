@@ -1,7 +1,12 @@
 import Slid from "../comp/Slid";
+import { Helmet } from "react-helmet-async";
 const Dashboard = () => {
   return (
     <Slid>
+      <Helmet>
+        <title>Dashboard</title>
+        <meta name="description" content="This is Your Dashboard" />
+      </Helmet>
       <>
         <h1 className="p-relative m-20">Dashboard</h1>
         <div className="wrapper m-20 d-grid gap-20">

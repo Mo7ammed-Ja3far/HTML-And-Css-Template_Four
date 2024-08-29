@@ -11,6 +11,8 @@ import Projects from "./parts/Projects.js";
 import Settings from "./parts/Settings.js";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import * as serviceWorkerRegistration from "./servc";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,7 +46,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );
 
