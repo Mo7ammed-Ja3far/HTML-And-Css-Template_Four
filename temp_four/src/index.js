@@ -12,7 +12,7 @@ import Settings from "./parts/Settings.js";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import * as serviceWorkerRegistration from "./servc";
+// import * as serviceWorkerRegistration from "./servc";
 const router = createBrowserRouter([
   {
     path: "/",
